@@ -1,0 +1,21 @@
+PROGRAM MENGHITUNG_BIL_GENAP
+{Menghitung jumlah Bilangan Genap yang dimasukan}
+
+DEKLARASI
+angka: integer
+jumlah: integer
+
+ALGORITMA
+jumlah <- 0
+
+while angka ≠ ‘ -1 ’ do
+ read(angka)
+  if angka mod 2 = 0 then
+      jumlah <- jumlah+1
+  else
+      jumlah <- jumlah+0
+  endif
+endwhile {angka = ’-1’}  
+
+write(jumlah)
+end

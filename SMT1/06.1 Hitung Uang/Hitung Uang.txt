@@ -1,0 +1,27 @@
+Program NilaiUang25
+
+Deklarasi
+uang, seribu, seratus, lp, dpl, cek;
+
+Algoritma
+read(uang)
+ if (cek=uang MOD 25)
+
+   seribu = uang DIV 1000
+   uang = uang MOD 1000
+
+   seratus = uang DIV 100
+   uang = uang MOD 100
+
+   lp = uang DIV 50
+   uang = uang MOD 50
+
+   dpl = uang DIV 25
+   uang = uang MOD 25
+
+ then
+   write (seribu)"buah pecahan 1000,"(seratus)" buah pecahan 100,"(lp)" buah pecahan 50,"(dpl)" buah pecahan 25"
+ else
+   write "bukan kelipatan 25"
+ end if
+end.

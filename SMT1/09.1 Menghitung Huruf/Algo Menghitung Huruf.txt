@@ -1,0 +1,20 @@
+PROGRAM MENGHITUNG_HURUF
+{Menghitung jumlah karakter yang dimasukan}
+
+DEKLARASI
+huruf: char
+jumlah: integer
+
+ALGORITMA
+read(huruf)
+jumlah <- 0
+
+while huruf ≠ ‘ . ’ do
+
+ jumlah<-jumlah + 1
+ read(huruf)
+
+endwhile {huruf = ’.’}  
+
+write(jumlah)
+end
